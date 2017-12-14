@@ -28,7 +28,7 @@ import time
 import thirdparty.requests as requests
 from .Response import *
 from .RequestException import *
-
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += 'HIGH:!DH:!aNULL'
 
 class Requester(object):
 
